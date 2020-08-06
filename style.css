@@ -1,0 +1,102 @@
+/*Main CSS Styles*/
+
+/*assigns background color, centers and adds padding for header and footer containers*/
+header, footer {
+  padding:  20px;
+  background-color: #6c757d; 
+  text-align: center;
+}
+
+/*assigns font, font color, padding and removes underline for elements with this class*/
+.hdrftr  {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #dee2e6;
+  padding: 0px 20px;
+  text-decoration: none;
+}
+
+/*assigns a different link and hover color for links with this class*/
+a.hdrftr:link {color:#dee2e6; }
+a.hdrftr:hover {color:#212529; }
+
+/*enlarges and makes main heading uppercase*/
+h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+/*assigns a background color and padding to the main body of the page*/
+main {
+  background-color: #ced4da;
+  padding: 10% 25%;
+}
+
+/*assigns font, font color to sub headings*/
+h2, h3, h4 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:#495057 ;
+}
+
+h4 { 
+  text-align: right;
+}
+
+/*assigns font, font color and font size to paragraphs and list items*/
+p, li{
+  color: #212529;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+  padding:1%;
+}
+
+/*adjusts size, sets the image to the right of the text and rounds corners*/
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/*assigns color values for each state of links*/
+section a:link {color: #212529;}
+section a:visited {color: #6c757d;}
+section a:hover {color:#525b64;}
+section a:active {color:#adb5bd;}
+
+/*assigns size, style, color and space above for horizontal rule*/
+hr {
+  border: .5px solid #6c757d;
+  margin-top: 10%;
+}
+
+/*Responsive styles (Mobile First)*/
+
+.group {
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: auto 10px auto 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: auto 10px auto 10px;
+}
+
+iframe {
+  padding-top:5%;
+  width: 100%;
+  height: 100%;
+}
+
+/*Desktop*/
+
+@media all and (min-width: 800px) {
+
+  .group {
+    flex-direction: row;
+  }
+
+}
